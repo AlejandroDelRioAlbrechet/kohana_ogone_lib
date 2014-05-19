@@ -1,15 +1,21 @@
 kohana_ogone_lib
 ================
 
-Kohana library to work with ogone payment.
+PHP library.
 
-Add this library to lib directory.
+Library which allow you to work with Ogone payment system using Kohana swift framework.
+
+Instalation: 
+
+Add Ogene.php to libraries dir of kohana project.
+
+Add ogoneConfig.php to configuration dir of your kohana project
 
 \Ogone\Ogone::instance( $this->ogoneConfig );
 
 \Ogone\Ogone::order( $orderDoc->id )
                 ->currency('EUR')
-                ->amount(100)
+                ->amount($amount)
                 ->method('CreditCard')
                 ->contact(
                             array( 
