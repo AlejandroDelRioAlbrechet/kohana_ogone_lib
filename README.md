@@ -1,4 +1,4 @@
-kohana_ogone_lib
+kohana Ogone lib
 ================
 
 PHP library.
